@@ -1,0 +1,32 @@
+// Centrar el contenido de la tarjeta
+ion-card {
+  text-align: center;
+  padding: 10px;
+  border-radius: 15px; // Bordes redondeados de la tarjeta
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1); // Sombra suave
+}
+
+// Estilo de la imagen redonda
+.rounded-img {
+  width: 100px;        // Tamaño fijo
+  height: 100px;       // Tamaño fijo
+  border-radius: 50%;  // Esto hace el círculo perfecto
+  object-fit: cover;   // Asegura que la foto no se deforme
+  margin: 0 auto;      // Centra la imagen horizontalmente
+  display: block;
+  border: 2px solid #f0f0f0; // Un borde sutil opcional
+}
+
+// Estilo del porcentaje de descuento
+.discount-text {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #333;
+  margin-top: 5px;
+}
+
+ion-card-subtitle {
+  text-transform: capitalize; // Pone la primera letra en mayúscula
+  font-size: 0.9rem;
+  margin-top: 10px;
+}

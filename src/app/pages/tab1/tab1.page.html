@@ -1,0 +1,63 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title class="ion-text-center">
+      Mis cupones
+    </ion-title>
+    
+    <ion-item slot="end" lines="none" (click)="startCamera()">
+      <ion-icon name="camera-outline"></ion-icon>
+    </ion-item>
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+  <ion-segment value="candies">
+    <ion-segment-button value="candies" content-id="candies">
+      <ion-label>Dulces</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="drinks" content-id="drinks">
+      <ion-label>Bebidas</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="meats" content-id="meats">
+      <ion-label>Carnes</ion-label>
+    </ion-segment-button>
+  </ion-segment>
+
+  <ion-segment-view>
+
+    <ion-segment-content id="candies">
+      <ng-container *ngTemplateOutlet="couponTemplate; context: {category: 'candies'}"></ng-container>
+    </ion-segment-content>
+
+    <ion-segment-content id="drinks">
+      <ng-container *ngTemplateOutlet="couponTemplate; context: {category: 'drinks'}"></ng-container>
+    </ion-segment-content>
+
+    <ion-segment-content id="meats">
+      <ng-container *ngTemplateOutlet="couponTemplate; context: {category: 'meats'}"></ng-container>
+    </ion-segment-content>
+
+  </ion-segment-view>
+
+  <ng-template #couponTemplate let-cat="category">
+    <ion-grid>
+      <ion-row>
+        <ion-col size="6" *ngFor="let coupon of coupons | filterCouponCategory: cat">
+          
+          <ion-card [color]="coupon.active ? 'secondary' : 'light'" (click)="changeActive(coupon)">
+          <img [src]="coupon.img" class="rounded-img" />
+            <ion-card-header>
+              <ion-card-subtitle>{{ coupon.name }}</ion-card-subtitle>
+            </ion-card-header>
+            <ion-card-content>
+              <div class="discount-text">{{ coupon.discount }}%</div>
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ng-template>
+
+</ion-content>

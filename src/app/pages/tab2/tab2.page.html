@@ -1,0 +1,30 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Canjear Cupones
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  
+  <ion-grid class="ion-text-center h-100">
+    <ion-row class="ion-align-items-center h-100">
+      <ion-col>
+        
+        @if (QRCode) {
+          <qrcode 
+            [qrdata]="QRCode" 
+            [width]="256" 
+            [errorCorrectionLevel]="'M'"
+            [elementType]="'svg'">
+          </qrcode>
+        } @else {
+          <ion-text>No hay cupones activos</ion-text>
+        }
+
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+</ion-content>

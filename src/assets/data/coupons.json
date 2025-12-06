@@ -1,0 +1,86 @@
+[
+    {
+        "idProduct": 1,
+        "img": "assets/img/galletas.jpg",
+        "name": "Galletas",
+        "category": "candies",
+        "discount": 10
+    },
+    {
+        "idProduct": 2,
+        "img": "assets/img/vino.jpg",
+        "name": "Vino rosado",
+        "category": "drinks",
+        "discount": 20
+    },
+    {
+        "idProduct": 3,
+        "img": "assets/img/carne.jpg",
+        "name": "Carne de ternera",
+        "category": "meats",
+        "discount": 50
+    },
+    {
+        "idProduct": 4,
+        "img": "assets/img/cafe.jpg",
+        "name": "Cafe",
+        "category": "drinks",
+        "discount": 30
+    },
+    {
+        "idProduct": 5,
+        "img": "assets/img/pollo.jpg",
+        "name": "Pollo fresco",
+        "category": "meats",
+        "discount": 40
+    },
+    {
+        "idProduct": 6,
+        "img": "assets/img/coca-cola.jpg",
+        "name": "Coca cola",
+        "category": "drinks",
+        "discount": 15
+    },
+    {
+        "idProduct": 7,
+        "img": "assets/img/chicles-menta.jpg",
+        "name": "Chicles de menta",
+        "category": "candies",
+        "discount": 5
+    },
+    {
+        "idProduct": 8,
+        "img": "assets/img/salchichas.jpg",
+        "name": "Salchichas de cerdo",
+        "category": "meats",
+        "discount": 25
+    },
+    {
+        "idProduct": 9,
+        "img": "assets/img/chocolate-leche.jpg",
+        "name": "Chocolate con leche",
+        "category": "candies",
+        "discount": 10
+    },
+    {
+        "idProduct": 10,
+        "img": "assets/img/te-verde.jpg",
+        "name": "Té verde",
+        "category": "drinks",
+        "discount": 10
+    },
+    {
+        "idProduct": 11,
+        "img": "assets/img/cerveza-artesanal.jpg",
+        "name": "Cerveza artesanal",
+        "category": "drinks",
+        "discount": 20
+    },
+    {
+        "idProduct": 12,
+        "img": "assets/img/chuletas-cordero.jpg",
+        "name": "Chuletas de cordero",
+        "category": "meats",
+        "discount": 35
+    }
+]
